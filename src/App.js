@@ -21,6 +21,9 @@ import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import ParentComp from './components/ParentComp';
 import Table from './components/Table';
+import RefsDemo from './components/RefsDemo';
+import InputFocus from './components/InputFocus';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
@@ -55,6 +58,9 @@ function App() {
         {/* <FragmentDemo/> */}
         {/* <Table/> */}
         {/* <ParentComp/> */}
+        {/* <RefsDemo /> */}
+        {/* <InputFocus /> */}
+      <PortalDemo/>
     </div>
   );
 }
