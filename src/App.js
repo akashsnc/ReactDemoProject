@@ -24,6 +24,8 @@ import Table from './components/Table';
 import RefsDemo from './components/RefsDemo';
 import InputFocus from './components/InputFocus';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero.js';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
@@ -60,7 +62,22 @@ function App() {
         {/* <ParentComp/> */}
         {/* <RefsDemo /> */}
         {/* <InputFocus /> */}
-      <PortalDemo/>
+        {/* <PortalDemo/> */}
+        
+        {/* <ErrorBoundary>
+          <Hero heroName="Superman"/>
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <Hero heroName="Batman"/>
+        </ErrorBoundary>
+        
+        {/* Each error-prone component should be wrapped with Error boundary component */}
+        {/*<ErrorBoundary>
+          <Hero heroName="Joker"/>
+        </ErrorBoundary> */}
+
+
     </div>
   );
 }
