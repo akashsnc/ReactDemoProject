@@ -24,8 +24,16 @@ import Table from './components/Table';
 import RefsDemo from './components/RefsDemo';
 import InputFocus from './components/InputFocus';
 import PortalDemo from './components/PortalDemo';
-import Hero from './components/Hero.js';
+import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import CounterTwo from './components/CounterTwo';
+import UserContext from './components/UserContext';
+import ComponentA from './components/ComponentA'
+import {UserProvider} from './components/UserContext'
 
 function App() {
   return (
@@ -63,7 +71,7 @@ function App() {
         {/* <RefsDemo /> */}
         {/* <InputFocus /> */}
         {/* <PortalDemo/> */}
-        
+
         {/* <ErrorBoundary>
           <Hero heroName="Superman"/>
         </ErrorBoundary>
@@ -77,7 +85,19 @@ function App() {
           <Hero heroName="Joker"/>
         </ErrorBoundary> */}
 
-
+        {/* <ClickCounter name='Akash'/>
+        <HoverCounter name='Suman'/> */}
+        {/* <ClickCounterTwo/>
+        <HoverCounterTwo/> */}
+        {/* <CounterTwo render={(count, incrementCount) => 
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+        } />
+        <CounterTwo render={(count, incrementCount) => 
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />
+        } /> */}
+        <UserProvider value="Akash">
+          <ComponentA/>
+        </UserProvider>
     </div>
   );
 }
