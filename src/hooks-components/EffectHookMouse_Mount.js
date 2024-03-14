@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
 
-function EffectHookMouse() {
+function EffectHookMouse_Mount() {
     const [x, setX] = useState(0)
     const [y, setY] = useState(0)
 
-    // When we want useEffect to called only once, to mimic ComponentDidMount method.
-    // Just add empty array as 2nd parameter indicating no dependency on any state element,
-    // hence calling the method only once after component mount.
+    // useEffect cab be called only once, to mimic ComponentDidMount behavior.
+    // Just add empty array as 2nd parameter indicating no dependency on any state object,
+    // hence useEffect will not watch any object for change.
     useEffect(() => {
         console.log('UseEffect - called')
         window.addEventListener('mousemove', logMousePosition)
@@ -23,4 +23,4 @@ function EffectHookMouse() {
     )
 }
 
-export default EffectHookMouse
+export default EffectHookMouse_Mount
