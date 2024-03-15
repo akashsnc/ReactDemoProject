@@ -7,6 +7,8 @@ import StateHookCounter from './hooks-components/StateHookCounter';
 import StateHookCounterFour from './hooks-components/StateHookCounterFour';
 import StateHookCounterThree from './hooks-components/StateHookCounterThree';
 import StateHookCounterTwo from './hooks-components/StateHookCounterTwo';
+import EffectHookHttpGetAllPosts from './http-components/EffectHookHttpGetAllPosts';
+import EffectHookHttpGetPost from './http-components/EffectHookHttpGetPost';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         {/* <EffectHookCounter/> */}
         {/* <EffectHookMouse_Mount/> */}
         {/* <EffectHookMouse_UnmountComponent /> */}
-        <EffectIntervalHookCounter/>
+        {/* <EffectIntervalHookCounter/> */}
+        {/* <EffectHookHttpGetAllPosts/> */}
+        <EffectHookHttpGetPost/>
     </div>
   );
 }
