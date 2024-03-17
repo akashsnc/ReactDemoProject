@@ -18,6 +18,9 @@ import ContextReducerHookB from './hooks-components/ContextReducerHookB';
 import ContextReducerHookA from './hooks-components/ContextReducerHookA';
 import EffectStateHookAPI from './hooks-components/EffectStateHookAPI';
 import EffectReducerHookAPI from './hooks-components/EffectReducerHookAPI';
+import CallbackHook from './hooks-components/CallbackHook';
+import MemoHook from './hooks-components/MemoHook';
+import RefHookFocusInput from './hooks-components/RefHookFocusInput';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -65,7 +68,10 @@ function App() {
           <ContextReducerHookB/>
         </CountContext.Provider> */}
         {/* <EffectStateHookAPI/> */}
-        <EffectReducerHookAPI/>
+        {/* <EffectReducerHookAPI/> */}
+        {/* <CallbackHook /> */}
+        {/* <MemoHook/> */}
+        <RefHookFocusInput/>
     </div>
   );
 }
