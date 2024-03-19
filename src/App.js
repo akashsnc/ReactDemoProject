@@ -21,6 +21,9 @@ import EffectReducerHookAPI from './hooks-components/EffectReducerHookAPI';
 import CallbackHook from './hooks-components/CallbackHook';
 import MemoHook from './hooks-components/MemoHook';
 import RefHookFocusInput from './hooks-components/RefHookFocusInput';
+import RefHookIntervalTimer from './hooks-components/RefHookIntervalTimer';
+import CustomHookDocTitleOne from './hooks-components/CustomHookDocTitleOne';
+import CustomHookDocTitleTwo from './hooks-components/CustomHookDocTitleTwo';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -71,7 +74,10 @@ function App() {
         {/* <EffectReducerHookAPI/> */}
         {/* <CallbackHook /> */}
         {/* <MemoHook/> */}
-        <RefHookFocusInput/>
+        {/* <RefHookFocusInput/> */}
+        {/* <RefHookIntervalTimer/> */}
+        <CustomHookDocTitleOne />
+        <CustomHookDocTitleTwo />
     </div>
   );
 }
