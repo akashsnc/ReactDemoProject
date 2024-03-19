@@ -24,6 +24,8 @@ import RefHookFocusInput from './hooks-components/RefHookFocusInput';
 import RefHookIntervalTimer from './hooks-components/RefHookIntervalTimer';
 import CustomHookDocTitleOne from './hooks-components/CustomHookDocTitleOne';
 import CustomHookDocTitleTwo from './hooks-components/CustomHookDocTitleTwo';
+import CustomHookCounterOne from './hooks-components/CustomHookCounterOne';
+import CustomHookCounterTwo from './hooks-components/CustomHookCounterTwo';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -76,8 +78,10 @@ function App() {
         {/* <MemoHook/> */}
         {/* <RefHookFocusInput/> */}
         {/* <RefHookIntervalTimer/> */}
-        <CustomHookDocTitleOne />
-        <CustomHookDocTitleTwo />
+        {/* <CustomHookDocTitleOne />
+        <CustomHookDocTitleTwo /> */}
+        {/* <CustomHookCounterOne />
+        <CustomHookCounterTwo /> */}
     </div>
   );
 }
