@@ -8,6 +8,7 @@ import Parent from "./render-components/Parent Child/Parent";
 import ParentOne from "./render-components/Optimization/ParentOne";
 import ChildOne from "./render-components/Optimization/ChildOne";
 import { GrandParent } from "./render-components/Optimization/GrandParent";
+import ParentTwo from "./render-components/Optimization/ParentTwo";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <ParentOne> 
         <ChildOne />
       </ParentOne> */}
-      <GrandParent />
+      {/* <GrandParent /> */}
+      <ParentTwo />
     </div>
   );
 }
