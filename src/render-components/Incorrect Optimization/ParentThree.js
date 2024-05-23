@@ -10,11 +10,14 @@ const ParentThree = () => {
         <div>
             <button onClick={() => setCount(c => c + 1)}>ParentThree: {count}</button>
             <button onClick={() => setName('Suman')}>Set Name</button>   
-            <MemoizedChildThree name={name}/>
+            <MemoizedChildThree name={name}>
+                <strong>Hello</strong>
+            </MemoizedChildThree>
         </div>
     )
 }
 
 export default ParentThree
 
-// Memoizing the child component will prevent unnecessary re-renders.
+// Memoizing the child component will prevent unnecessary re-renders,
+// But Memoizing component is not advised if have said component have children components.
