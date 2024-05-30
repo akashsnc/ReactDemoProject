@@ -1,0 +1,5 @@
+When does a component re-renders?
+
+[a] Component calls useState setter function or useReducer dispatch function
+[b] If parent component re-renders.
+[c] React context

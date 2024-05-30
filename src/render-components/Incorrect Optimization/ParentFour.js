@@ -27,9 +27,7 @@ const ParentFour = () => {
 
 export default ParentFour;
 
-// Using React memo is not advised because passing down 
-// objects and functions will always result in re-rendering of child component.
-// Because every time Parent component is re-rendered, a fresh object / function 
-// reference is created and passed down to the child component.
+// Using React memo is not advised in scenarios where objects and functions are passed down as props.
+// A new reference is created for objects and functions which will always result in re-rendering of child component.
 
 // CHECK ParentFive.js FOR SOLUTION
